@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+  </head>
+  <body>
+
+    <section class="card">    
+
+      <!-- změna obrázku při různé velikosti obrazovky -->
+      <picture class="card__img-container">
+        <source media="(min-width: 1024px)" srcset="./images/image-header-desktop.jpg">
+        <img class="card__img" src="./images/image-header-mobile.jpg" alt="people at the office">
+      </picture>
+
+      <div class="insights">
+    
+        <h1 class="insights__title">
+          Get <span>insights</span> that help your business grow.
+        </h1>
+    
+        <p class="insights__text">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+
+        <div class="insights__counter">
+          <div class="counter__item">
+            <p class="counter__number">10k+</p>
+            <p class="counter__text">companies</p>
+          </div>
+          <div class="counter__item">
+            <p class="counter__number">314</p>
+            <p class="counter__text">templates</p>
+          </div>
+          <div class="counter__item">
+            <p class="counter__number">12M+</p>
+            <p class="counter__text">queries</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/davidgrossmann" target="_blank">David G.</a>.
+    </div>
+  </body>
+</html>
